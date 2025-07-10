@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080808;
+    color: #fff;
+}
+   
+/* Home Page Background Image */
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png); /*home page background image url*/
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+/* Syling NavBar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Styling logo image */
+.logo {
+    width: 140px;
+}
+
+/* Horizontal the Navbar */
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+/* Remove underline from Menu items and color white */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+/* njbjsdkfskjnks */
+/* kndkjniudfsnjufs */
+
+
+/* Youtube video (GreatStack)- 13:51 */
