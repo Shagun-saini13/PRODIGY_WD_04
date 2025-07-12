@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <!-- JavaScript Link -->
+     <script src="script.js"></script>
 </head>
+
 <body>
     <!-- Header -->
     <div id="header">
         <div class="container">
             <nav>
-                <!-- logo image url -->
+                <!-- logo image URL -->
                 <img src="images/logo.png" class="logo">
 
                 <!-- NavBar Menu -->
@@ -36,7 +39,7 @@
      <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <!-- User Image on About page -->
+                <!-- User Image URL on About page -->
                 <img src="images/user.png">
             </div>
             <div class="about-col-2">
@@ -45,29 +48,41 @@
 
                 <!-- Skills, Experience, Education -->
                  <div class="tab-titles">
-                    <p class="tab-links active-link">Skills</p>
-                    <p class="tab-links">Experience</p>
-                    <p class="tab-links">Education</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
                  </div>
 
                  <!-- Skills -->
-                 <div class="tab-contents">
+                 <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>Front-End Development</span><br>HTML, CSS (Created websites and interactive UI elements)</li>
                         <li><span>Programming Languages</span><br>C, C++</li>
                         <li><span>Projects Built</span><br>Tic Tac Toe Game (Web)<br>Stopwatch (Web)<br>Responsive Navigation Bar</li>
                     </ul>
                  </div>
-                 <!-- E -->
-                  <div class="tab-contents">
+                 <!-- Experience -->
+                  <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>15 June,2025 to Present</span><br>Intern at Prodign Infotech</li>
+                        <li><span>15 June,2025 - Current</span><br>Intern at Prodigy InfoTech</li>
                     </ul>
                  </div>
+                 <!-- Education -->
+                  <div class="tab-contents" id="education">
+                    <ul>
+                        <!-- Graduation -->
+                        <li><span>2023 - 2027</span><br>B.Tech (CSE) from Maharishi Markandeshwar Deemed to be University Mullana, Ambala, Haryana</li>
+                        <!-- 12th Class -->
+                        <li><span>2023</span><br>Senior Secondary (Class 12)<br>Non-Medical Stream<br>Sunrise Senior Secondary School, CBSE<br>Percentage: 74.8%</li>
+                        <!-- 10th Class -->
+                        <li><span>2021</span><br>Secondary (Class 10)<br>Sunrise Senior Secondary School, CBSE<br>Percentage: 83.5%</li>
+                    </ul>
+                 </div>
+
             </div>
         </div>
      </div>
+
+<!-- -------------Services------------ -->
 </body>
 </html>
-
-<!-- 31:00 -->
