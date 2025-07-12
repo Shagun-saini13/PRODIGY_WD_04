@@ -14,7 +14,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.png); /*home page background image url*/
+    background-image: url(images/background.png); /*home page background image URL*/
     background-size: cover;
     background-position: center;
 }
@@ -23,7 +23,7 @@ body {
     padding: 10px 10%;
 }
 
-/* Syling NavBar */
+/* Styling NavBar */
 nav {
     display: flex;
     align-items: center;
@@ -43,7 +43,7 @@ nav ul li {
     margin: 10px 20px;
 }
 
-/* Remove underline from Menu items and color white */
+/* Remove underline from Menu items and give color white */
 nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -78,12 +78,14 @@ nav ul li a:hover::after {
     margin-top:20px;
 }
 
-/* Home Page Name Color */
+/* Home Page My Name Color */
 .header-text h1 span {
     color: #ff004f;
 }
 
-/* ------------About------------ */
+
+
+/* -----------------About----------------- */
 #about {
     padding: 80px 0;
     color:#ababab;
@@ -99,6 +101,7 @@ nav ul li a:hover::after {
     flex-basis: 35%;
 }
 
+/* Column 1 user image */
 .about-col-1 img {
     width: 100%;
     border-radius: 15px;
@@ -108,6 +111,7 @@ nav ul li a:hover::after {
     flex-basis: 60%;
 }
 
+/* About Me  */
 .sub-title {
     font-size: 60px;
     font-weight: 600;
@@ -140,6 +144,7 @@ nav ul li a:hover::after {
     width: 50%;
 }
 
+/* Skils,Experience, Education Content*/
 .tab-contents ul li {
     list-style: none;
     margin: 10px 0;
@@ -156,4 +161,50 @@ nav ul li a:hover::after {
 /* To display Skills content */
 .tab-contents.active-tab {
     display: block;
+}
+
+/* -----------------Services--------------- */
+#services {
+    padding: 30px 0;
+}
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    /* Some Space From Top */
+    margin-top: 50px;
+}
+.services-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+/* Styling icon/Symbols */
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+/* Stylins Service list titles */
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+/* Stylins Service list link */
+.services-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+/* Hover Effect on Service list */
+.services-list div:hover {
+    background: #ff004f;
+    /* Move box by -10px */
+    transform: translateY(-10px);
 }
