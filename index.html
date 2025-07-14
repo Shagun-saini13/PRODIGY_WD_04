@@ -28,11 +28,11 @@
 
                 <!-- NavBar Menu -->
                  <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <!-- Menu Close icon -->
                      <i class="material-symbols-outlined" onclick="closemenu()">Close</i>
                  </ul>
@@ -207,7 +207,7 @@
                 <!-- Social Media icons -->
                 <div class="social-icons">
                     <!-- Linkedin -->
-                    <a href="www.linkedin.com/in/shagunsaini13" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/shagunsaini13/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <!-- Github -->
                     <a href="https://github.com/Shagun-saini13" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
@@ -233,9 +233,20 @@
     </div>
   </div>
 
+<script>
+    // ----------SideMenu-------
+    var sidemenu = document.getElementById("sidemenu");
 
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }     
+</script>       
 
 
 
 </body>
 </html>
+<!-- 1:48 -->
