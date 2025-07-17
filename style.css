@@ -237,6 +237,7 @@ nav ul li a:hover::after {
 .work img {
     width: 100%;
     border-radius: 10px;
+    height: 75%;
     display: block;
     /* Zoom in image */
     transition: transform 0.5s;
